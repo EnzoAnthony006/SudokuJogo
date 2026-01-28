@@ -1,108 +1,85 @@
-# 🧩 Sudoku em Java (Swing)
+# Sudoku Java 
 
-Um jogo de **Sudoku desktop** desenvolvido em **Java**, utilizando **Swing** para a interface gráfica e uma arquitetura bem definida entre **modelo, interface e lógica do jogo**.
-
-O jogo inicia com um tabuleiro gerado automaticamente, contendo números fixos e espaços editáveis, simulando a experiência de um Sudoku real.
-
----
-
-## 📸 Demonstração
-
-> Tabuleiro 9x9 dividido em **9 blocos (3x3)**, com números iniciais fixos e células editáveis.
-
-*(adicione prints do jogo aqui para deixar o repositório mais profissional)*
+Aplicação de Sudoku desenvolvida em **Java** utilizando **Swing**, com foco em boas práticas de programação, **Programação Orientada a Objetos (POO)** e organização de código limpa.
 
 ---
 
 ## 🚀 Funcionalidades
 
-- 🎲 Geração automática do tabuleiro
-- 🔢 Números iniciais fixos distribuídos aleatoriamente
-- ✏️ Inserção de números pelo usuário
-- ❌ Remoção de números não fixos
-- 🔒 Proteção contra edição de células fixas
-- 🧹 Reset do jogo
-- ⏱️ Cronômetro em tempo real
-- 🏁 Validação de finalização do jogo
-- 🎨 Interface gráfica organizada em blocos 3x3
+- **Tabuleiro 9x9** com blocos 3x3 destacados
+- **Inicialização automática** com números fixos pré-definidos
+- **Inserção e remoção** de valores pelo usuário
+- **Validação do estado do jogo**, garantindo que regras do Sudoku sejam respeitadas
+- **Contador de tempo** da partida para registro de performance
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 💻 Tecnologias Utilizadas
 
-- **Java 17+**
-- **Java Swing**
-- **Programação Orientada a Objetos (POO)**
-
----
-
-## 📂 Estrutura do Projeto
-
-Sudoku/
-├── Model/
-│ ├── Board.java
-│ ├── Space.java
-│ └── GameStatusEnum.java
-│
-├── ui/
-│ ├── MenuFrame.java
-│ └── SudokuFrame.java
-│
-├── Util/
-│ └── BoardTemplate.java
-│
-└── Main.java
-
+- **Java SE**
+- **Swing** para interface gráfica
+- **POO** para modelagem de classes e separação de responsabilidades (MVC)
 
 ---
 
-## 🧠 Arquitetura
+## 🎯 Objetivo do Projeto
 
-- **Model**
-  - Responsável pelas regras do jogo, estado e validações
-- **UI**
-  - Interface gráfica e interação com o usuário
-- **Util**
-  - Componentes auxiliares
-- **Main**
-  - Inicialização da aplicação
+Este projeto tem como propósito:
+
+1. Consolidar conhecimentos em **Programação Orientada a Objetos**.
+2. Aplicar lógica de negócio para **validação de regras do Sudoku**.
+3. Desenvolver uma **aplicação desktop funcional** e organizada.
+4. Servir como **exemplo de portfólio profissional** para recrutadores e futuras oportunidades.
 
 ---
 
-## ▶️ Como Executar
+## 🏗️ Estrutura do Projeto
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/sudoku-java.git
-Abra o projeto em uma IDE (IntelliJ, Eclipse ou VS Code).
+O projeto segue uma organização clara em camadas e responsabilidades:
 
-Execute a classe:
+- **Model**: Classes que representam o tabuleiro (`Board`), espaços (`Space`) e lógica do jogo.
+- **View**: Interface gráfica (`SudokuFrame`) com painéis, botões e interação do usuário.
+- **Controller**: Gerencia a comunicação entre o Model e a View, atualizando o estado do jogo.
+- **Util**: Classes utilitárias, como templates de tabuleiro e validação de entrada.
 
-Main.java
-🎯 Objetivo do Projeto
-Este projeto foi desenvolvido com o objetivo de:
+---
 
-Praticar Java Swing
+## ⚙️ Como Executar
 
-Aplicar Programação Orientada a Objetos
+1. **Clonar o repositório**:
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+Abrir o projeto em sua IDE Java favorita (Eclipse, IntelliJ, NetBeans).
 
-Trabalhar com eventos e interfaces gráficas
+Executar a classe Main:
 
-Desenvolver um projeto completo para portfólio
+public class Main {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new SudokuFrame());
+    }
+}
+Interagir com o tabuleiro inserindo ou removendo números.
 
-📌 Melhorias Futuras
-✅ Seleção de nível de dificuldade
+📈 Aprendizados
+Aplicação prática de MVC em Swing
 
-💡 Validação em tempo real dos números
+Manipulação de componentes gráficos (JPanel, JButton, JTextField)
 
-🎨 Melhorias visuais na interface
+Implementação de validação de regras do Sudoku
 
-💾 Salvamento de progresso
+Controle de tempo de jogo e atualização da interface dinamicamente
 
-🌍 Versão internacional (i18n)
+Boas práticas de POO e organização de código
 
-👤 Autor
-Enzo Anthony
+📂 Próximos Passos / Evoluções
+Implementar geração aleatória de tabuleiros válidos
 
-📌 Projeto desenvolvido para fins de estudo e portfólio.
+Adicionar níveis de dificuldade (fácil, médio, difícil)
 
+Salvar o progresso do jogador para retomar partidas
+
+Melhorar a interface gráfica com cores, ícones e feedback visual
+
+📌 Contato
+
+LinkedIn: https://www.linkedin.com/in/enzo-anthony/
